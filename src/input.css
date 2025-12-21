@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@property --degree{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+@layer components{
+    .moto{
+        color: transparent;
+        background-clip: text;
+        background-image: conic-gradient(from var(--degree),gainsboro,orange,green);
+        animation: rotatebg 3s infinite linear;
+    }
+    @keyframes rotatebg {
+        from{
+        --degree:0deg;
+        }
+        to{
+        --degree:350deg;
+        }
+    }
+    
+}
+@layer components{
+      .moto1{
+        color: transparent;
+        background-clip: text;
+        background-image: conic-gradient(from 360deg, green,orange,green);
+      
+}
+}

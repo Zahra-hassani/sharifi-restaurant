@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +31,22 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
-       <div class="flex gap-8"><button class=' font-bold rounded-md px-4 py-1 text-[18px] hover:border hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
-        <button class=' font-bold rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:border hover:bg-black '> <a href="insertAdmin.php">Sign up</a></button>
-      </div></div>
+       <div class="flex gap-8">
+        <?php
+        if(isset($_SESSION['username'])){
+          ?>
+          <button class="font-bold rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black"><a href="logout.php">Log out</a></button>
+          <?php
+        }else{
+        ?>
+        <button class=' font-bold rounded-md px-4 py-1 text-[18px] hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
+        <button class=' font-bold rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black '> <a href="insertAdmin.php">Sign up</a></button>
+        <?php
+        }
+        ?>
+
+      </div>
+    </div>
      </nav>
      <!-- nav ended -->
       <!-- hero started -->

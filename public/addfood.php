@@ -1,5 +1,13 @@
 <?php
-include("connect.php");
+session_start();
+include "connect.php";
+if(isset($_SESSION['username'])){
+    $dastor = "select f.food_id,f.food_name,f.price,f.imgurl,s.size from food as f inner join food_size as s on f.food_id = s.food_id order by f.food_name asc limit $start,$num_of_foods_per_page";
+    $allfood = $connect->query($dastor);
+}
+else{
+    header("location:login.php");
+}
 
 if($_SERVER["REQUEST_METHOD"]==="POST"){
     $fName = $_POST["fName"];

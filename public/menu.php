@@ -9,12 +9,14 @@ $allfood = $connect->query($dastor);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-       <nav class='h-20 p-3 bg-black/40 sticky w-full text-white border-b-[1px] border-b-white'>
-      <div class='flex justify-between items-center'>
-        <img src="../public/img/logo.png" alt="" class='h-full w-14 rounded-full'>
+       <nav class='h-20 px-3 bg-black/40 sticky w-full flex items-center text-white border-b-[1px] border-b-white'>
+      <div class='w-full h-full flex justify-between items-center'>
+        <img src="../public/images/logo.png" alt="" class='h-full w-20 rounded-full'>
         <ul class='flex flex-row gap-20 text-[20px] items-center'>
             <li><a href="home.php">Home</a></li>
             <li><a href="menu.php">Our menu</a></li>

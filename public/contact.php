@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512- … " crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,17 +18,17 @@
 <body>
     
         <!-- nav  started -->
-     <nav class=' p-3 bg-black/70 fixed top-0 w-full text-white border-b-[1px] border-b-white'>
+     <nav class=' px-3 bg-black/70 fixed top-0 w-full text-white border-b-[1px] border-b-white'>
       <div class='flex justify-between'>
-       <img src="../public/images/logo.png" alt="" class='h-full w-14 rounded-full'>
+       <img src="../public/images/logo.png" alt="" class='h-20 w-20 rounded-full'>
         <ul class='flex flex-row gap-20 text-[20px] items-center'>
             <li><a href="home.php">Home</a></li>
-             <li><a href="ourmenu.php">Our menu</a></li>
+             <li><a href="menu.php">Our menu</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
-        <div class="flex gap-8"><button class=' font-bold rounded-md px-4 text-[18px] hover:border hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
-        <button class=' font-bold rounded-md px-4 text-[18px] bg-green-700 text-white hover:border hover:bg-black '> <a href="insertAdmin.php">Sign up</a></button>
+        <div class="flex gap-8"><button class='py-1 font-bold rounded-md px-4 text-[18px] hover:border hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
+        <button class='py-1 font-bold rounded-md px-4 text-[18px] bg-green-700 text-white hover:border hover:bg-black '> <a href="insertAdmin.php">Sign up</a></button>
       </div>
       </div>
      </nav>
@@ -63,37 +63,35 @@
           <div class="h-[110vh] w-full bg-stone-50/70">
         <div class="h-screen w-full bg-stone-50/70 overflow-x-hidden flex ">
             
-           <div class="flex-1  items-center overflow-x-hidden h-screen w-1/2 border-r-[1px] border-r-green-700">
+           <div class="flex-1 flex flex-col gap-10 p-4 items-center h-fit w-1/2 border-r-[1px] border-r-green-700">
            <div
-           class="text-center p-10"><h1 class="text-4xl text-green-700 font-brush">Get In Touch</h1></div>
+           class="text-center"><h1 class="text-4xl text-green-700 font-brush">Get In Touch</h1></div>
            <p
-           class="text-center text-[18px] overflow-x-hidden p-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque dolor quasi minus alias, voluptates iusto soluta at corrupti consequatur enim eligendi numquam, iure, nesciunt cupiditate fugiat consectetur commodi delectus!</p>
-             <div class="grid grid-cols-3">
+           class="text-center text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque dolor quasi minus alias, voluptates iusto soluta at corrupti consequatur enim eligendi numquam, iure, nesciunt cupiditate fugiat consectetur commodi delectus!</p>
+             <div class="grid grid-cols-3 gap-6 p-5">
                 <div class="flex hover:shadow-md  bg-white shadow w-36 px-5 py-4 rounded-md gap-5">
-                   <i class="fa-brands fa-github hover:underline text-green-700 text-[22px]"></i>
+                   <i class="fa-brands fa-github text-green-700 text-[22px]"></i>
                     <h1 class="text-nowrap font-bold">Github</h1>
                 </div>
                 <div class="flex bg-white hover:shadow-md shadow w-36 px-5 py-4 rounded-md gap-5">
-              <i class="fa-brands fa-facebook hover:underline text-green-700 text-[22px]"></i>
+              <i class="fa-brands fa-facebook text-green-700 text-[22px]"></i>
                     <h1 class="text-nowrap font-bold">Facebook</h1>
                 </div>
                 <div class="flex bg-white hover:shadow-md shadow w-36 px-5 py-4 rounded-md gap-5">
-                   <i class="fa-brands fa-linkedin hover:underline text-green-700 text-[22px]"></i>
+                   <i class="fa-brands fa-linkedin text-green-700 text-[22px]"></i>
                     <h1  class="text-nowrap font-bold">Linkedin</h1>
                 </div>
 
-             </div>
-             <div class="grid grid-cols-3 mt-11">
                 <div class="flex hover:shadow-md  bg-white shadow w-36 px-5 py-4 rounded-md gap-5">
-                    <i class="fa-brands fa-twitter hover:underline text-green-700 text-[22px]"></i>
+                    <i class="fa-brands fa-twitter text-green-700 text-[22px]"></i>
                     <h1 class="text-nowrap font-bold">Twitter</h1>
                 </div>
                 <div class="flex bg-white hover:shadow-md shadow w-36 px-5 py-4 rounded-md gap-5">
-                 <i class="fa-solid fa-phone hover:underline text-green-700 text-[22px]"></i>
+                 <i class="fa-solid fa-phone text-green-700 text-[22px]"></i>
                     <h1 class="text-nowrap font-bold">Call now</h1>
                 </div>
                 <div class="flex bg-white hover:shadow-md shadow w-36 px-5 py-4 rounded-md gap-5">
-                    <i class="fa-brands fa-instagram hover:underline text-green-700 text-[22px]"></i>
+                    <i class="fa-brands fa-instagram text-green-700 text-[22px]"></i>
                     <h1  class="text-nowrap font-bold">Instagram</h1>
                 </div>
 
@@ -103,13 +101,15 @@
             <div
             
             class="flex-1 text-center rounded-md overflow-x-hidden">
-                           <div class="bg-white shadow-md h-[95vh] mx-auto rounded-md w-[80%]">
-                           <div class="text-center p-10"><h1 class="text-4xl text-green-700 font-brush">Contact Us</h1></div>
-               <input type="text" class="border focus:outline-green-700 border-gray-400 w-[80%] p-4 h-8 mt-6 rounded-sm" placeholder="Enter your name" />
-               <input type="text" class="border focus:outline-green-700 border-gray-400 w-[80%] p-4 h-8 mt-6 rounded-sm" placeholder="Enter your email" />
-               <input type="text" class="border focus:outline-green-700 border-gray-400 w-[80%]  p-4 h-8 mt-6 rounded-sm" placeholder="Enter your subject" />
-              <textarea class="focus:outline-green-700 border border-gray-400 mt-4 rounded-sm w-[80%] h-32 text-gray-500 p-1">Enter your Comment</textarea>
-             <a href=""><button class="bg-green-700 hover:shadow-md font-bold w-[80%] text-white h-10 mt-7 hover:cursor-pointer rounded-md">Send messege</button></a>
+                           <div class="bg-white shadow-md h-fit mx-auto rounded-md w-[60%]">
+                            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" class="flex flex-col gap-4 p-4">
+                           <h1 class="text-4xl py-6 text-green-700 font-brush">Contact Us</h1>
+               <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your name" />
+               <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your email" />
+               <input type="text" class="border focus:outline-green-700 border-gray-400  p-4 h-8 rounded-sm" placeholder="Enter your subject" />
+              <textarea class="focus:outline-green-700 border border-gray-400 rounded-sm h-32 text-gray-500 p-1">Enter your Comment</textarea>
+             <button class="bg-green-700 hover:shadow-md font-bold text-white h-10 hover:cursor-pointer rounded-md"><a href="#"></a>Send messege</a></button>
+             </form>
                </div>
             </div>
             

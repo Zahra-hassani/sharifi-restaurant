@@ -16,18 +16,9 @@ $allfood = $connect->query($dastor);
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-      <nav class=' p-3 bg-black/40 text-white border-b-[1px] border-b-white'>
-      <div class='flex justify-between'>
-        <img src="../sharifi class diagram.png" alt="" class='h-12 w-12 rounded-full'>
-        <ul class='flex flex-row gap-20 text-[20px] items-center'>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="menu.php">Meun</a></li>
-        </ul>
-        <button class=' font-bold rounded-md px-6 text-[18px] bg-green-700 text-white '> <a href="insertAdmin.php">Login</a></button>
-      </div>
-     </nav>
+      <?php
+      include "navbar.php";
+      ?>
      <!-- nav end -->
       <div class="h-[40%] w-full flex flex-col items-center justify-center">
             <?php 
@@ -44,6 +35,8 @@ $allfood = $connect->query($dastor);
                </div>
              <?php } ?>
             </div>
-       
+      <?php
+      include "footer.php";
+      ?>
 </body>
 </html>

@@ -18,20 +18,9 @@
 <body>
     
         <!-- nav  started -->
-     <nav class=' px-3 bg-black/70 fixed top-0 w-full text-white border-b-[1px] border-b-white'>
-      <div class='flex justify-between'>
-       <img src="../public/images/logo.png" alt="" class='h-20 w-20 rounded-full'>
-        <ul class='flex flex-row gap-20 text-[20px] items-center'>
-            <li><a href="home.php">Home</a></li>
-             <li><a href="menu.php">Our menu</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="about.php">About</a></li>
-        </ul>
-        <div class="flex gap-8"><button class='py-1 font-bold rounded-md px-4 text-[18px] hover:border hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
-        <button class='py-1 font-bold rounded-md px-4 text-[18px] bg-green-700 text-white hover:border hover:bg-black '> <a href="insertAdmin.php">Sign up</a></button>
-      </div>
-      </div>
-     </nav>
+      <?php 
+      include "navbar.php";
+      ?>
      <!-- nav ended -->
       <div class="h-[70vh] mt-20 w-full bg-stone-50/70">
          <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">Contact Us</h1>
@@ -98,19 +87,17 @@
              </div>
             
             </div>
-            <div
-            
-            class="flex-1 text-center rounded-md overflow-x-hidden">
-                           <div class="bg-white shadow-md h-fit mx-auto rounded-md w-[60%]">
-                            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" class="flex flex-col gap-4 p-4">
-                           <h1 class="text-4xl py-6 text-green-700 font-brush">Contact Us</h1>
-               <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your name" />
-               <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your email" />
-               <input type="text" class="border focus:outline-green-700 border-gray-400  p-4 h-8 rounded-sm" placeholder="Enter your subject" />
-              <textarea class="focus:outline-green-700 border border-gray-400 rounded-sm h-32 text-gray-500 p-1">Enter your Comment</textarea>
-             <button class="bg-green-700 hover:shadow-md font-bold text-white h-10 hover:cursor-pointer rounded-md"><a href="#"></a>Send messege</a></button>
-             </form>
-               </div>
+            <div class="flex-1 text-center rounded-md overflow-x-hidden">
+              <div class="bg-white shadow-md h-fit mx-auto rounded-md w-[60%]">
+                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" class="flex flex-col gap-4 p-4">
+                  <h1 class="text-4xl py-6 text-green-700 font-brush">Contact Us</h1>
+                  <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your name" />
+                  <input type="text" class="border focus:outline-green-700 border-gray-400 p-4 h-8 rounded-sm" placeholder="Enter your email" />
+                  <input type="text" class="border focus:outline-green-700 border-gray-400  p-4 h-8 rounded-sm" placeholder="Enter your subject" />
+                  <textarea class="focus:outline-green-700 border border-gray-400 rounded-sm h-32 text-gray-500 p-1">Enter your Comment</textarea>
+                  <button class="bg-green-700 hover:shadow-md font-bold text-white h-10 hover:cursor-pointer rounded-md"><a href="#"></a>Send messege</a></button>
+                </form>
+              </div>
             </div>
             
         </div>

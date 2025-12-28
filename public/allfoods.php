@@ -26,23 +26,18 @@ if(isset($_GET["page_nr"])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Foods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
     
      <!-- nav is endedd -->
-       <nav class='h-20 p-3 bg-black/40 w-full fixed top-0 text-white border-b-[1px] border-b-white'>
-      <div class='flex justify-between'>
-        <img src="../public/images/logo.png" alt="" class='h-full w-14 rounded-full'>
-        <ul class='flex flex-row gap-20 text-[20px] items-center'>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="menu.php">Our menu</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="about.php">About</a></li>
-        </ul>
-        <button class=' font-bold rounded-md px-6 text-[18px] bg-green-700 text-white '> <a href="insertAdmin.php">Login</a></button>
-      </div>
-     </nav>
+       <?php
+        include "navbar.php";
+       ?>
+     <!-- nav bar end -->
+      <div class="p-4 font-bold bg-green-700 text-white rounded-full"></div>
+      <!-- show data -->
       <?php
       if($allfood->num_rows>0){
         ?>
@@ -75,7 +70,7 @@ if(isset($_GET["page_nr"])){
         <div class="w-full flex pl-[40%] mt-16">
             <div>
                 <a class="border p-2 bg-gray-400 text-white rounded-sm" href="?page_nr=1">First</a>
-                <a  class="border bg-gray-400 text-white p-2" href="">Next</a>
+                <a  class="border bg-gray-400 text-white p-2" href="?page_nr=<?php echo $nr_page+1 ?>">Next</a>
 
                 <?php 
                 for($i = 1;$i<= $pages;$i++){
@@ -84,12 +79,14 @@ if(isset($_GET["page_nr"])){
                    <?php
                 ?>
                 <?php }?>
-                <a class="border p-2 bg-gray-400 text-white" href="">Prevoius</a>
+                <a class="border p-2 bg-gray-400 text-white" href="?page_nr=<?php echo $nr_page-1 ?>">Prevoius</a>
                 <a class="border p-2 text-white rounded-sm bg-gray-400" href="?page_nr=<?php echo $pages ?>">Last</a>
             </div>
         </div>
         <?php
       }
+      include "footer.php";
       ?>
+
 </body>
 </html>

@@ -3,7 +3,7 @@ session_start();
 
 ?>
 
-
+<!-- Database creation with tables -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,17 +40,17 @@ session_start();
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum saepe sequi accusantium impedit dolor quisquam sint optio laboriosam atque, hic, a voluptatum dolorem magnam. Libero quam molestias saepe? Nostrum, consequuntur? 
      </p>
          <!-- about ended -->
-        <div class="mt-16 z-20">
-  <h1 class="text-2xl font-bold text-green-700 font-2xl p-12 uppercase text-center">The special dishes</h1>
+        <div class="py-8 flex w-full max-w-7xl mx-auto p-5 flex-col items-center gap-4 z-20">
+  <h1 class="text-2xl font-bold text-green-700 font-2xl p-12 uppercase text-center">Our Delicious Offers</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <img src="./images/another header.jpg" alt="Food 1" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
+    <img src="./images/food1.jpg" alt="Food 1" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
     <img src="./images/spe1.jpg" alt="Food 2" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/header1.jpg" alt="Food 3" class="rounded-lg h-100 shadow overflow-x-hidden transition duration-300">
+    <img src="./images/header1.jpg" alt="Food 3" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
     <img src="./images/spe3.jpg" alt="Food 4" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
     <img src="./images/spe4.jpg" alt="Food 5" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
-    <img src="./images/pasta.webp" alt="Food 6" class="rounded-lg h-100 w-130 shadow transition duration-300">
+    <img src="./images/food6.png" alt="Food 6" class="rounded-lg h-100 w-130 shadow hover:scale-105 transition duration-300">
   </div>
-  <a href="allfoods.php" class="text-center">See all →</a>
+  <a href="allfoods.php" class="text-center mx-auto w-fit rounded-xl bg-stone-100 border-stone-300 border py-1.5 px-5">See all →</a>
 </div>
  <!-- footer -->
   <?php

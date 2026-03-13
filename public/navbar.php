@@ -15,7 +15,7 @@
      ?>
      <nav class='h-20 z-50 px-3 bg-black/40 backdrop-blur-md w-full fixed top-0 left-0 text-white border-b-[1px] border-b-white'>
       <div class='flex justify-between items-center'>
-        <img src="../public/images/logo.png" alt="" class='h-20 w-20 rounded-full'>
+        <img src="../public/images/res.png" alt="" class='h-full w-20 object-cover rounded-full'>
         <ul class='flex flex-row gap-20 text-[20px] items-center'>
             <li><a href="home.php">Home</a></li>
             <li><a href="menu.php">Our menu</a></li>

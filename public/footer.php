@@ -1,5 +1,5 @@
-<footer class="bg-gray-900 text-white py-10 mt-10">
-  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+<footer class="bg-gray-900 text-white pt-4">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 py-1.5">
     
     <div>
       <h3 class="text-lg font-semibold mb-4">About Us</h3>
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="mt-10 text-center text-sm text-white border-t border-gray-700 pt-4">
+  <div class=" text-center text-sm text-white border-t border-gray-700 py-4">
  <h1>   © 2025 YourRestaurant. All rights reserved.</h1>
   </div>
 </footer>

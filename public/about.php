@@ -18,7 +18,7 @@
 <section class="bg-white py-16 px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div>
-      <h2 class="text-4xl font-bold text-black mb-4">About Us</h2>
+      <h2 class="text-4xl font-bold text-green-700 mb-4">About Us</h2>
       <p class="text-black text-lg leading-relaxed">
         We are a team of passionate developers and designers dedicated to building modern, responsive, and user-friendly digital experiences. 
         Our mission is to deliver high-quality solutions that empower people and businesses to grow and succeed.
@@ -35,8 +35,8 @@
 
  
 <!-- Food Gallery Section -->
-<div class="mt-16">
-  <h1 class="text-2xl font-semibold text-black font-2xl mb-6 text-center">Our Special Dishes</h1>
+<div class="py-8 px-4">
+  <h1 class="text-2xl font-semibold text-green-700 font-2xl mb-6 text-center">Our Special Dishes</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <img src="./images/burger.jpg" alt="Food 1" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
     <img src="./images/pizza.png" alt="Food 2" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="bg-gray-100 rounded shadow hover:shadow-lg transition">
-        <img src="./images/pasta.webp" alt="Food 2" class="w-full h-80 rounded-t">
+        <img src="./images/spe4.jpg" alt="Food 2" class="w-full h-80 rounded-t">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Fresh Pasta</h3>
           <p class="text-sm text-gray-600">$9.99</p>

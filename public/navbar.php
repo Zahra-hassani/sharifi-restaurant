@@ -13,7 +13,7 @@
      <?php 
      session_start();
      ?>
-     <nav class='h-20 z-50 px-3 bg-black/40 backdrop-blur-md w-full fixed top-0 left-0 text-white border-b-[1px] border-b-white'>
+     <nav class='h-20 z-50 px-3 bg-black/40 backdrop-blur-md w-full sticky top-0 left-0 text-white border-b-[1px] border-b-white'>
       <div class='flex justify-between items-center'>
         <img src="../public/images/res.png" alt="" class='h-full w-20 object-cover rounded-full'>
         <ul class='flex flex-row gap-20 text-[20px] items-center'>
@@ -27,6 +27,7 @@
         if(isset($_SESSION['username'])){
           ?>
           <button class="font-bold  rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black"><a href="logout.php">Log out</a></button>
+          <button class="font-bold  rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black"><a href="allfoods.php">All Foods</a></button>
           <?php
         }else{
         ?>

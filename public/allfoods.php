@@ -1,9 +1,9 @@
 <?php
-session_start();
+// session_start();
 include "connect.php";
 $start = 0;
 $num_of_foods_per_page = 5;
-if(isset($_SESSION['username'])){
+if(!isset($_SESSION['username'])){
     $dastor = "select f.food_id,f.food_name,f.price,f.imgurl,s.size from food as f inner join food_size as s on f.food_id = s.food_id order by f.food_name asc limit $start,$num_of_foods_per_page";
     $allfood = $connect->query($dastor);
 }
@@ -29,14 +29,16 @@ if(isset($_GET["page_nr"])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body>
+<body class="relative">
     
      <!-- nav is endedd -->
        <?php
         include "navbar.php";
        ?>
      <!-- nav bar end -->
-      <div class="p-4 font-bold bg-green-700 text-white rounded-full"></div>
+      <div class="p-4 w-fit absolute top-23 right-4 font-bold text-2xl bg-green-700 text-white rounded-full">
+        <a href="addfood.php"><i class="fas fa-plus"></i></a>
+      </div>
       <!-- show data -->
       <?php
       if($allfood->num_rows>0){
@@ -67,10 +69,10 @@ if(isset($_GET["page_nr"])){
             }
             ?>
         </table>
-        <div class="w-full flex pl-[40%] mt-16">
+        <div class="w-full h-fit flex justify-center items-center gap-4 p-4">
             <div>
                 <a class="border p-2 bg-gray-400 text-white rounded-sm" href="?page_nr=1">First</a>
-                <a  class="border bg-gray-400 text-white p-2" href="?page_nr=<?php echo $nr_page+1 ?>">Next</a>
+                <a  class="border bg-gray-400 text-white rounded-sm p-2" href="?page_nr=<?php echo $nr_page+1 ?>">Next</a>
 
                 <?php 
                 for($i = 1;$i<= $pages;$i++){
@@ -79,7 +81,7 @@ if(isset($_GET["page_nr"])){
                    <?php
                 ?>
                 <?php }?>
-                <a class="border p-2 bg-gray-400 text-white" href="?page_nr=<?php echo $nr_page-1 ?>">Prevoius</a>
+                <a class="border p-2 bg-gray-400 rounded-sm text-white" href="?page_nr=<?php echo $nr_page-1 ?>">Prevoius</a>
                 <a class="border p-2 text-white rounded-sm bg-gray-400" href="?page_nr=<?php echo $pages ?>">Last</a>
             </div>
         </div>

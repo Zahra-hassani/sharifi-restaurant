@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 ?>
 
@@ -20,13 +20,13 @@ session_start();
     </style>
 </head>
 <body>
-    <div class="h-screen bg-center bg-conic-180  bg-cover w-full" id="hero">
-    <!-- nav  started -->
-     <?php
+  <!-- nav  started -->
+  <?php
       include "navbar.php";
-     ?>
+      ?>
      <!-- nav ended -->
-      <!-- hero started -->
+     <!-- hero started -->
+     <div class="h-screen bg-center bg-conic-180  bg-cover w-full" id="hero">
       <h1 class="text-8xl moto font-bold p-20" >The Delicious Way <span class="block ">to Eat <i>Healthy.</i></span></h1>
       <h1 class="text-white pl-20 text-[20px] -mt-10 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente<span class="block "> fuga eaque voluptas temporibus provident hic aliquid nemo officia  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
       <button class="px-5 ml-20 mt-8 hover:cursor-pointer py-4 font-semi-bold hover:border hover:bg-black bg-green-700 text-white transition-colors duration-700 rounded-md hover:opacity-90"><a href="insertAdmin.php">Get Started</a></button>

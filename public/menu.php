@@ -1,5 +1,5 @@
 <?php 
-session_start();
+// session_start();
 include "connect.php";
 $dastor = "select * from food";
 $allfood = $connect->query($dastor);

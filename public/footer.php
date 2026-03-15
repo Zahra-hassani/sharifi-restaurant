@@ -23,6 +23,7 @@
         <a href="#"><i class="fab fa-twitter hover:text-white"></i></a>
         <a href="#"><i class="fab fa-youtube hover:text-white"></i></a>
       </div>
+      <p><a href="#" class="hover:text-white text-gray-300">www.sharifirestaurant.com</a></p>
     </div>
   </div>
 

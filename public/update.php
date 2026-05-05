@@ -49,22 +49,22 @@ $id = $_SESSION["foodid"];
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body>
-    <div class="h-screen w-full flex justify-center items-center">
-        <form action=<?php echo $_SERVER["PHP_SELF"] ?> enctype="multipart/form-data" method="post"  class="shadow-md flex flex-col items-center gap-3 p-4 rounded h-96 w-[30%]">
-            <h1 class="text-center font-bold text-3xl text-blue-700 p-2">Update Food</h1>
-            <input value="<?php echo $row["food_name"] ?>" type="text" name="fName" placeholder=" Enter food name" class="border rounded-full focus:outline-blue-700 focus:outline-1 p-2 w-[90%] outline-0 ">
-            <input value="<?php echo $row["price"] ?>" type="text" name="price" placeholder=" Enter the price" class="border rounded-full focus:outline-blue-700 focus:outline-1 p-2 w-[90%] outline-0 ">
+    <div class="h-screen w-full bg-[url(../public/images/bg6.jpg)] bg-cover bg-no-repeat flex justify-center items-center">
+        <form action=<?php echo $_SERVER["PHP_SELF"] ?> enctype="multipart/form-data" method="post"  class="shadow-md flex flex-col bg-white/70 items-center gap-3 p-4 rounded h-96 w-[30%]">
+            <h1 class="text-center font-bold text-3xl text-green-700 p-2">Update Food</h1>
+            <input value="<?php echo $row["food_name"] ?>" type="text" name="fName" placeholder=" Enter food name" class="border rounded-full focus:outline-green-700 focus:outline-1 p-2 w-[90%] outline-0 ">
+            <input value="<?php echo $row["price"] ?>" type="text" name="price" placeholder=" Enter the price" class="border rounded-full focus:outline-green-700 focus:outline-1 p-2 w-[90%] outline-0 ">
             <?php $file ; ?>
-            <input value="<?php echo $row["imgurl"] ?>" type="file" name="image" id="file" placeholder=" Enter food name" class="border rounded-full focus:outline-blue-700 focus:outline-1 p-2 w-[90%] outline-0">
+            <input value="<?php echo $row["imgurl"] ?>" type="file" name="image" id="file" placeholder=" Enter food name" class="border rounded-full focus:outline-green-700 focus:outline-1 p-2 w-[90%] outline-0">
             <select name="size" class="border w-[90%] rounded-full p-2  outline-0 ">
                 <option value="<?php echo $row1['size'] ?>" ><?php echo $row1['size'] ?></option>
                 <option value="small" >small</option>
                 <option value="medium">medium</option>
                 <option value="large">large</option>
             </select>
-            <button class="px-6 hover:cursor-pointer rounded-full py-2 bg-blue-700 w-[90%] text-white font-bold">Update</button>
+            <button class="px-6 hover:cursor-pointer rounded-full py-2 bg-green-700 w-[90%] text-white font-bold">Update</button>
         </form>
-        <div class="h-96 w-[30%] rounded-l-sm">
+        <div class="h-96 w-[30%] bg-white/70 rounded-l-sm">
             <img src="./images/<?php echo $row['imgurl'] ?>" class="h-full w-full rounded-r-sm" alt="">
         </div>
     </div>

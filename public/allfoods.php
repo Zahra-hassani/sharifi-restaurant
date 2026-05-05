@@ -57,7 +57,7 @@ if(isset($_GET["page_nr"])){
                 $_SESSION["id"] = $row["food_id"];
                 $food_id = $_SESSION["id"];
                 ?>
-                <tr class="odd:bg-gray-100 even:bg-gray-300 text-black hover:text-green-700">
+                <tr class="odd:bg-gray-100 even:bg-gray-300 hover:bg-gray-200 transition-all  text-black hover:text-green-700">
                     <td class="text-center px-3 py-1"><?php echo $row ['food_name'] ?></td>
                     <td class="text-center px-3 py-1"><?php echo $row ['size'] ?></td>
                     <td class="text-center px-3 py-1"><?php echo $row ['price'] ?></td>
@@ -69,20 +69,29 @@ if(isset($_GET["page_nr"])){
             }
             ?>
         </table>
-        <div class="w-full h-fit flex justify-center items-center gap-4 p-4">
-            <div>
-                <a class="border p-2 bg-gray-400 text-white rounded-sm" href="?page_nr=1">First</a>
-                <a  class="border bg-gray-400 text-white rounded-sm p-2" href="?page_nr=<?php echo $nr_page+1 ?>">Next</a>
-
+        <div class="w-full h-fit flex justify-center items-center gap-5 p-4">
+            <div class="w-1/2 flex justify-center items-center gap-5 p-4">
+                <a class="border py-1 px-3 bg-gray-400 text-white rounded-lg" href="?page_nr=1">First</a>
+                <?php
+                if($nr_page<$pages && $nr_page>0){
+                    ?>
+                <a class="border py-1 px-3 bg-gray-400 rounded-lg text-white" href="?page_nr=<?php echo $nr_page ?>">Prevoius</a>
+                <?php }
+                ?>
                 <?php 
                 for($i = 1;$i<= $pages;$i++){
                     ?>
-                   <a class="border p-2 rounded-sm text-white bg-green-700" href="?page_nr<= <?php  echo $i ?>"><?php echo $i ?></a>
+                   <a class="border py-1 px-3 rounded-full text-white bg-green-700" href="?page_nr=<?php  echo $i ?>"><?php echo $i ?></a>
                    <?php
                 ?>
                 <?php }?>
-                <a class="border p-2 bg-gray-400 rounded-sm text-white" href="?page_nr=<?php echo $nr_page-1 ?>">Prevoius</a>
-                <a class="border p-2 text-white rounded-sm bg-gray-400" href="?page_nr=<?php echo $pages ?>">Last</a>
+                <?php 
+                if($nr_page<$pages){
+                    ?>
+                <a  class="border bg-gray-400 text-white rounded-lg py-1 px-3" href="?page_nr=<?php echo $nr_page+2 ?>">Next</a>
+                <?php }
+                ?>
+                <a class="border py-1 px-3 text-white rounded-lg bg-gray-400" href="?page_nr=<?php echo $pages ?>">Last</a>
             </div>
         </div>
         <?php

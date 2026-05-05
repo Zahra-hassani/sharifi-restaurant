@@ -22,12 +22,14 @@
       include "navbar.php";
       ?>
      <!-- nav ended -->
-      <div class="h-[70vh] mt-20 w-full bg-stone-50/70">
-         <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">Contact Us</h1>
+      <div class="h-[70vh] w-full bg-stone-50/70">
+        <div class="h-72 w-full bg-[url(../public/images/bg5.jpg)] bg-cover bg-no-repeat flex justify-center items-center">
+          <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">Contact Us</h1>
+        </div>
      <p class="text-center text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga quibusdam cumque corporis ea sapiente doloribus neque error porro, voluptates, qui explicabo minus beatae incidunt culpa similique necessitatibus repellat optio.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odio optio eaque consequuntur itaque beatae totam, quasi culpa adipisci incidunt quisquam provident saepe magnam. Odio quod ratione eos neque obcaecati.
      </p>
-    <div class="flex gap-10 justify-evenly mt-12">
+    <div class="flex bg-stone-50/70 gap-10 justify-evenly">
         <div class="text-center">
            <div><i class="fa-solid fa-location-dot text-3xl text-green-700"></i></div>
             <p class="font-bold mt-3 text-xl">Physical Address</p>
@@ -48,9 +50,8 @@
             <p class=" text-base mt-2">+1800-586-824</p>
         </div>
           </div>
-        </div>
-          <div class="h-[110vh] w-full bg-stone-50/70">
-        <div class="h-screen w-full bg-stone-50/70 overflow-x-hidden flex ">
+          <div class=" w-full bg-stone-50/70 py-8">
+        <div class="h-fit w-full bg-stone-50/70 overflow-x-hidden flex ">
             
            <div class="flex-1 flex flex-col gap-10 p-4 items-center h-fit w-1/2 border-r-[1px] border-r-green-700">
            <div

@@ -50,7 +50,7 @@
     <img src="./images/spe4.jpg" alt="Food 5" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
     <img src="./images/food6.png" alt="Food 6" class="rounded-lg h-100 w-130 shadow hover:scale-105 transition duration-300">
   </div>
-  <a href="allfoods.php" class="text-center mx-auto w-fit rounded-xl bg-stone-100 border-stone-300 border py-1.5 px-5">See all →</a>
+  <a href="menu.php" class="text-center mx-auto w-fit rounded-xl bg-stone-100 border-stone-300 border py-1.5 px-5">See all →</a>
 </div>
  <!-- footer -->
   <?php

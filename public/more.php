@@ -24,14 +24,20 @@ $allfood = $connect->query($dastor);
             <?php 
             while($row = $allfood ->fetch_assoc()){
                 ?>  
-                 <img class="h-[30%] w-[50%]" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
-               <div class="h-[80%] w-full">
-                 <div class="w-full flex gap-7 justify-center text-white">
+                <div class="w-full h-84 grid grid-cols-1 lg:grid-cols-5 gap-3 p-4 max-w-6xl mx-auto">
+                    <div class="col-span-2 group h-full w-full overflow-hidden rounded-lg hover:shadow-green-700 hover:shadow-[0_0_3px]">
+                        <div class="h-full">
+                            <img class="h-full w-full object-cover group-hover:scale-110 transition-all duration-200" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
+                        </div>
+                    </div>
+               <div class="col-span-3 w-full">
+                 <div class="w-full flex flex-col items-start gap-4 justify-center text-white">
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['food_name'] ?></h1>
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['price'] ?>AF</h1>
                 </div>
-                   <p class="w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat illum consectetur fugiat culpa commodi dolor vitae, pariatur sit, quam veniam totam. Excepturi eos sed, error commodi perferendis tenetur eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos iure beatae, mollitia quod quidem iusto laborum nam ipsa illo expedita quam facere minima ducimus, nostrum voluptate, consequatur qui rerum Lorem Lorem . Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora nam ipsam omnis eius excepturi, vel sint tempore nostrum cumque aut vitae voluptates, nemo quia? Natus omnis at dignissimos eius!</p>
+                   <p class="w-[80%] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat illum consectetur fugiat culpa commodi dolor vitae, pariatur sit, quam veniam totam. Excepturi eos sed, error commodi perferendis tenetur eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos iure beatae, mollitia quod quidem iusto laborum nam ipsa illo expedita quam facere minima ducimus, nostrum voluptate, consequatur qui rerum Lorem Lorem . Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempora nam ipsam omnis eius excepturi, vel sint tempore nostrum cumque aut vitae voluptates, nemo quia? Natus omnis at dignissimos eius!</p>
             
+               </div>
                </div>
              <?php } ?>
             </div>

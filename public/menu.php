@@ -23,22 +23,27 @@ $allfood = $connect->query($dastor);
        <?php
       if($allfood->num_rows>0){
         ?>
-        <div class="w-full h-fit bg-[url(../public/images/burger-with-melted-cheese.jpg.webp)]  bg-cover gap-4 grid grid-cols-4 items-center justify-around">
+        <div class="w-full py-8 mx-auto flex flex-col items-center gap-3">
+          <h1 class="font-bold text-2xl lg:text-3xl lg:uppercase text-green-700">Our Special Foods</h1>
+          <p class="text-center p-2">Enjoy Your Meal In A Friendly Space and Experience new flovers.</p>
+        
+        <div class="w-full bg-[url(../public/images/burger-with-melted-cheese.jpg.webp)]  bg-cover gap-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto">
               <?php 
             while($row = $allfood ->fetch_assoc()){
                 ?>    
-        <div class="flex flex-col items-center justify-center h-fit w-[90%] rounded shadow p-4">
-                 <img class="h-54 w-[80%] rounded" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
+        <div class="flex flex-col h-fit w-full rounded shadow p-4">
+                 <img class="h-54 w-full rounded" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
                 <div class="w-full flex gap-7 justify-around text-white">
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['food_name'] ?></h1>
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['price'] ?>AF</h1>
                 </div>
-                <button>
-                <a class="text-2xl font-bold" href="more.php?id=<?php echo $row['food_id'] ?>">More</a>
-                </button>
+                <!-- <button class="text-xl font-semibold"> -->
+                <a class="text-xl text-right font-semibold" href="more.php?id=<?php echo $row['food_id'] ?>">More</a>
+                <!-- </button> -->
                  </div>
                 <?php } ?>
              
+              </div>
               </div>
         <?php } ?>
         <!-- footer start -->

@@ -15,6 +15,9 @@
      ?>
      <!-- nav ended -->
       <!-- section started -->
+       <div class="h-72 w-full bg-[url(../public/images/bg5.jpg)] bg-cover bg-no-repeat flex justify-center items-center">
+          <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">About Us</h1>
+        </div>
 <section class="bg-white py-16 px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div>

@@ -24,13 +24,13 @@ $allfood = $connect->query($dastor);
             <?php 
             while($row = $allfood ->fetch_assoc()){
                 ?>  
-                <div class="w-full h-84 grid grid-cols-1 lg:grid-cols-5 gap-3 p-4 max-w-6xl mx-auto">
-                    <div class="col-span-2 group h-full w-full overflow-hidden rounded-lg hover:shadow-green-700 hover:shadow-[0_0_3px]">
+                <div class="w-full flex flex-col items-center gap-3 p-4 max-w-6xl mx-auto">
+                    <div class=" group h-96 overflow-hidden rounded-lg hover:shadow-green-700 hover:shadow-[0_0_3px]">
                         <div class="h-full">
-                            <img class="h-full w-full object-cover group-hover:scale-110 transition-all duration-200" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
+                            <img class="object-center h-full w-full object-cover group-hover:scale-110 transition-all duration-200" src="./images/<?php echo $row ['imgurl'] ?>" alt="">
                         </div>
                     </div>
-               <div class="col-span-3 w-full">
+               <div class="max-w-6xl mx-auto w-full">
                  <div class="w-full flex flex-col items-start gap-4 justify-center text-white">
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['food_name'] ?></h1>
                      <h1 class="text-green-700 text-2xl font-medium"><?php echo $row ['price'] ?>AF</h1>

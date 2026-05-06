@@ -12,12 +12,15 @@ else{
 }
 $result = $connect->query( "Select * From food");
 $num_rows = $result->num_rows;
-$pages =ceil( $num_rows/$num_of_foods_per_page);
+$total_page =ceil( $num_rows/$num_of_foods_per_page);
 if(isset($_GET["page_nr"])){
-    $nr_page = $_GET["page_nr"] -1;
+    $nr_page = $_GET["page_nr"] -1 ;
     $start = $nr_page * $num_of_foods_per_page;
       $dastor = "select f.food_id,f.food_name,f.price,f.imgurl,s.size from food as f inner join food_size as s on f.food_id = s.food_id order by f.food_name asc limit $start,$num_of_foods_per_page";
     $allfood = $connect->query($dastor);
+}
+else{
+    $nr_page= 1;
 }
 ?>
 <!DOCTYPE html>
@@ -73,25 +76,25 @@ if(isset($_GET["page_nr"])){
             <div class="w-1/2 flex justify-center items-center gap-5 p-4">
                 <a class="border py-1 px-3 bg-gray-400 text-white rounded-lg" href="?page_nr=1">First</a>
                 <?php
-                if($nr_page<$pages && $nr_page>0){
+                if($nr_page<$total_page && $nr_page>0){
                     ?>
                 <a class="border py-1 px-3 bg-gray-400 rounded-lg text-white" href="?page_nr=<?php echo $nr_page ?>">Prevoius</a>
                 <?php }
                 ?>
                 <?php 
-                for($i = 1;$i<= $pages;$i++){
+                for($i = 1;$i<= $total_page;$i++){
                     ?>
                    <a class="border py-1 px-3 rounded-full text-white bg-green-700" href="?page_nr=<?php  echo $i ?>"><?php echo $i ?></a>
                    <?php
                 ?>
                 <?php }?>
                 <?php 
-                if($nr_page<$pages){
+                if($nr_page<=$total_page){
                     ?>
                 <a  class="border bg-gray-400 text-white rounded-lg py-1 px-3" href="?page_nr=<?php echo $nr_page+2 ?>">Next</a>
                 <?php }
                 ?>
-                <a class="border py-1 px-3 text-white rounded-lg bg-gray-400" href="?page_nr=<?php echo $pages ?>">Last</a>
+                <a class="border py-1 px-3 text-white rounded-lg bg-gray-400" href="?page_nr=<?php echo $total_page ?>">Last</a>
             </div>
         </div>
         <?php

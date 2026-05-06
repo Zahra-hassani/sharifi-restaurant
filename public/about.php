@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="p-0 m-0 ">
-       <div class="h-screen bg-center bg-conic-180  bg-cover w-full gul"  id="hero">
+       <div class="h-screen bg-center bg-conic-180  bg-cover w-full"  id="hero">
     <!-- nav  started -->
      <?php  
       include "navbar.php";

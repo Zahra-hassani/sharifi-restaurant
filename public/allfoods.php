@@ -40,7 +40,7 @@ else{
        ?>
      <!-- nav bar end -->
       <div class="p-4 w-fit absolute top-23 right-4 font-bold text-2xl bg-green-700 text-white rounded-full">
-        <a href="addfood.php"><i class="fas fa-plus"></i></a>
+        <a href="addfood.php"><i class="fas fa-plus"></i> add</a>
       </div>
       <!-- show data -->
       <?php

@@ -12,17 +12,18 @@
     </ul>
    <div class="flex gap-8">
     <?php
-    if(isset($_SESSION['username']))
+    if(isset($_SESSION['username'])){
       ?>
       <button class="font-bold  rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black"><a href="logout.php">Log out</a></button>
       <button class="font-bold  rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black"><a href="allfoods.php">All Foods</a></button>
       <?php
-    else
+    }
+    else{
     ?>
     <button class=' font-bold rounded-md px-4 py-1 text-[18px] hover:bg-black bg-green-700 text-white '> <a href="login.php">Login</a></button>
     <button class=' font-bold rounded-md px-4 py-1 text-[18px] bg-green-700 text-white hover:bg-black '> <a href="register.php">Sign up</a></button>
     <?php
-    
+    }
     ?>
     </div>
   </div>

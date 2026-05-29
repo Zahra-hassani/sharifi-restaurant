@@ -29,7 +29,7 @@
      <div class="h-screen bg-center bg-conic-180  bg-cover w-full" id="hero">
       <h1 class="text-8xl moto font-bold p-20" >The Delicious Way <span class="block ">to Eat <i>Healthy.</i></span></h1>
       <h1 class="text-white pl-20 text-[20px] -mt-10 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente<span class="block "> fuga eaque voluptas temporibus provident hic aliquid nemo officia  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-      <button class="px-5 ml-20 mt-8 hover:cursor-pointer py-4 font-semi-bold hover:border hover:bg-black bg-green-700 text-white transition-colors duration-700 rounded-md hover:opacity-90"><a href="insertAdmin.php">Get Started</a></button>
+      <a href="menu.php"><button class="px-5 ml-20 mt-8 hover:cursor-pointer py-4 font-semi-bold hover:border hover:bg-black bg-green-700 text-white transition-colors duration-700 rounded-md hover:opacity-90">Get Started</button></a>
     </div> 
       
 
@@ -43,12 +43,12 @@
         <div class="py-8 flex w-full max-w-7xl mx-auto p-5 flex-col items-center gap-4 z-20">
   <h1 class="text-2xl font-bold text-green-700 font-2xl p-12 uppercase text-center">Our Delicious Offers</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <img src="./images/food1.jpg" alt="Food 1" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/spe1.jpg" alt="Food 2" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/header1.jpg" alt="Food 3" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/spe3.jpg" alt="Food 4" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
-    <img src="./images/spe4.jpg" alt="Food 5" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
-    <img src="./images/food6.png" alt="Food 6" class="rounded-lg h-100 w-130 shadow hover:scale-105 transition duration-300">
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/food1.jpg" alt="Food 1" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/spe1.jpg" alt="Food 2" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/header1.jpg" alt="Food 3" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/spe3.jpg" alt="Food 4" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/spe4.jpg" alt="Food 5" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/food6.png" alt="Food 6" class="rounded-lg h-full w-full shadow group-hover:scale-120 transition duration-300"/> </div>
   </div>
   <a href="menu.php" class="text-center mx-auto w-fit rounded-xl bg-stone-100 border-stone-300 border py-1.5 px-5">See all →</a>
 </div>

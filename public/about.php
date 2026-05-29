@@ -18,7 +18,7 @@
        <div class="h-72 w-full bg-[url(../public/images/bg5.jpg)] bg-cover bg-no-repeat flex justify-center items-center">
           <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">About Us</h1>
         </div>
-<section class="bg-white py-16 px-6">
+<section class="bg-white my-9 px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div>
       <h2 class="text-4xl font-bold text-green-700 mb-4">About Us</h2>
@@ -31,7 +31,7 @@
       </p>
     </div>
     <div>
-      <img src="./images/chieve2.jpg" alt="Team Photo" class="rounded-lg shadow-lg w-130 h-130 object-cover">
+      <img src="./images/chieve2.jpg" alt="Team Photo" class="rounded-lg shadow-lg w-130 h-100 object-cover">
     </div>
   </div>
 </section>
@@ -41,12 +41,12 @@
 <div class="py-8 px-4">
   <h1 class="text-2xl font-semibold text-green-700 font-2xl mb-6 text-center">Our Special Dishes</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <img src="./images/burger.jpg" alt="Food 1" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/pizza.png" alt="Food 2" class="rounded-lg h-100 shadow hover:scale-105 transition duration-300">
-    <img src="./images/cupcake.jpg" alt="Food 3" class="rounded-lg h-100 shadow hover:scale-105 overflow-x-hidden transition duration-300">
-    <img src="./images/food1.jog.jpg" alt="Food 4" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
-    <img src="./images/food2.jpg" alt="Food 5" class="rounded-lg h-100 shadow w-130 hover:scale-105 transition duration-300">
-    <img src="./images/cupcake2.jpg" alt="Food 6" class="rounded-lg h-100 w-130 shadow hover:scale-105 transition duration-300">
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/burger.jpg" alt="Food 1" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/pizza.png" alt="Food 2" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/cupcake.jpg" alt="Food 3" class="rounded-lg h-full shadow w-full group-hover:scale-120 overflow-x-hidden transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/food1.jog.jpg" alt="Food 4" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/food2.jpg" alt="Food 5" class="rounded-lg h-full shadow w-full group-hover:scale-120 transition duration-300"/> </div>
+    <div class="rounded-lg h-100 w-100 group overflow-hidden"><img src="./images/cupcake2.jpg" alt="Food 6" class="rounded-lg h-full w-full shadow group-hover:scale-120 transition duration-300"/> </div>
   </div>
 </div>
    

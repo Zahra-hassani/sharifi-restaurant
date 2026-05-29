@@ -28,6 +28,6 @@
   </div>
 
   <div class=" text-center text-sm text-white border-t border-gray-700 py-4">
- <h1>   © 2025 YourRestaurant. All rights reserved.</h1>
+ <h1>   © 2025 Sharifi Restaurant. All rights reserved.</h1>
   </div>
 </footer>

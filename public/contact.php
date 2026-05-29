@@ -26,9 +26,22 @@
         <div class="h-72 w-full bg-[url(../public/images/bg5.jpg)] bg-cover bg-no-repeat flex justify-center items-center">
           <h1 class="text-4xl text-green-700 p-8 font-brush text-center font-bold ">Contact Us</h1>
         </div>
-     <p class="text-center text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga quibusdam cumque corporis ea sapiente doloribus neque error porro, voluptates, qui explicabo minus beatae incidunt culpa similique necessitatibus repellat optio.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odio optio eaque consequuntur itaque beatae totam, quasi culpa adipisci incidunt quisquam provident saepe magnam. Odio quod ratione eos neque obcaecati.
-     </p>
+        <section class="bg-white my-8 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold text-green-700 mb-4 uppercase">if you have any Special Orders...</h2>
+      <p class="text-black text-lg leading-relaxed">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum veniam accusantium fugiat quis, corporis eveniet numquam pariatur minima, placeat perferendis ullam nemo alias suscipit molestias. Nostrum, modi eligendi ipsam vero vitae eaque ab. Accusamus expedita vero aliquam autem consequuntur, esse corrupti aperiam officiis vitae a minima excepturi cumque, at rem?
+      </p>
+      <p class="text-black text-lg mt-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nobis, vel, maxime eaque assumenda autem quia sed, at qui deserunt velit asperiores molestiae cum.
+      </p>
+    </div>
+    <div>
+      <img src="./images/chieve.jpg" alt="Team Photo" class="rounded-lg shadow-lg w-130 h-100 object-cover">
+    </div>
+  </div>
+</section>
     <div class="flex bg-stone-50/70 gap-10 justify-evenly">
         <div class="text-center">
            <div><i class="fa-solid fa-location-dot text-3xl text-green-700"></i></div>
@@ -133,7 +146,7 @@
   </div>
 
   <div class="mt-10 text-center text-sm text-white border-t border-gray-700 pt-4">
- <h1>   © 2025 YourRestaurant. All rights reserved.</h1>
+ <h1>   © 2025 Sharifi Restaurant. All rights reserved.</h1>
   </div>
 </footer>
 
